@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:elevation="12dp"
+    android:id="@+id/view2"
+    app:cardCornerRadius="5dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="0dp"
+    android:shape="oval"
+    android:thicknessRatio="1.0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/categorybg"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="21dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/cat_name_tv"
+        android:textColor="@color/white"
+        android:text="">
+    </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/view"
+            android:layout_height="0.5dp">
+
+        </View>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_Item_category"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/add_rl"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/ads_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

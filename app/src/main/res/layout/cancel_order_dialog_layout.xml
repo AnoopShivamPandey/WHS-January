@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/dialog_bg"
+        android:padding="20dp">
+
+        <RadioGroup
+            android:id="@+id/cancelOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/checkLL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:clickable="false"
+
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="The booking is late."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkLL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:clickable="false"
+
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="I want to book something else."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkLL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="I have to go somewhere."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkLL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="I dont like this place."
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/confirmTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/cancelOption"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_yes_btn_bg"
+            android:gravity="center"
+            android:text="Cancel Booking"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/cancelTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/confirmTxt"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_n0_btn_bg"
+            android:gravity="center"
+            android:text="Don\'t Cancel"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_bg">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

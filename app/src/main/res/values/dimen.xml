@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_txt">20dp</dimen>
+    <dimen name="normal_txt">16dp</dimen>
+    <dimen name="medium_txt">18dp</dimen>
+    <dimen name="small_txt">14dp</dimen>
+    <dimen name="tiny_txt">6dp</dimen>
+</resources>

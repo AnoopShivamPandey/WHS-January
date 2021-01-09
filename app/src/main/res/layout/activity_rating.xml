@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackTrans">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:id="@+id/selectCountBg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Rating"
+                android:textColor="@color/colorGrey"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible">
+
+            <RatingBar
+                android:id="@+id/ratingStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:progressTint="@color/colorYellow"
+                android:rating="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Write Your Review"
+                android:textColor="@color/colorGrey"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/reviewEdt"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/view_bg"
+                android:hint="Review"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textStyle="italic" />
+
+            <RelativeLayout
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobileBg"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/login" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorWhite" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTrans"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@drawable/list_item_bg"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/subCatPic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/subCatTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/subCatPic"
+            android:text="@string/app_name"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorGrey"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

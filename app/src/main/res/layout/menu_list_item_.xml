@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/burger" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:gravity="left|center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/itemTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="13dp" />
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/priceTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2.0"
+
+            android:background="@color/white">
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/number_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+
+                numberpicker:focusable="false"
+                numberpicker:unit="1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="5dp"
+        android:layout_height="0.5dp">
+
+    </View>
+
+</RelativeLayout>

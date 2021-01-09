@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTrans"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/list_item_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/subCatPic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/subCatPic"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/orderIdTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Order Id:"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Order Id:"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/invoiceTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="date"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="date"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_white"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/clickTxt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorTrans" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

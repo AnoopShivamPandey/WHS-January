@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F6B16C"
+        android:layout_height="wrap_content">
+        <include layout="@layout/common_header" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:padding="10dip"
+            app:centered="true"
+            app:fillColor="#df0623"
+            app:pageColor="#fff" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dynamic_ll"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/noRecordsText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/norecord"
+                android:text="Record not found !"
+                android:textColor="@color/red"
+                android:textSize="18dp" />
+
+            |</LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

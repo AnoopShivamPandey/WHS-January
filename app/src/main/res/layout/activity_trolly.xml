@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackTrans">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/banerImg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/demoa" />
+
+            <ImageView
+                android:id="@+id/detailBg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/banerImg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_bg" />
+
+            <ImageView
+                android:id="@+id/trollyPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_image" />
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trollyPic"
+                android:gravity="center"
+                android:text="Trolly name"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+            <RatingBar
+                android:id="@+id/rateStar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/nameTxt"
+                android:progressBackgroundTint="@color/colorHintYellow"
+                android:progressTint="@color/colorYellow" />
+
+
+            <RelativeLayout
+                android:layout_below="@id/rateStar"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/estImg"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/est_time"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/estImg"
+                    android:text="Distance from you"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/distanceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 km away"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorRed"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/orderTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/detailBg"
+                android:background="@drawable/drawer_background"
+                android:gravity="center"
+                android:text="Order Now"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+</RelativeLayout>

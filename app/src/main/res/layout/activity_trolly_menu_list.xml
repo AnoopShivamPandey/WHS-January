@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apk_home_service.customer.UI.TrollyMenuListActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu_icon"
+            android:visibility="gone" />
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/trollyImg"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/whitetext" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/trollyName"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/caveat"
+                android:text="Service"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectCountBg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Menu"
+            android:textColor="@color/colorGreen"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/selectCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Item Selected"
+            android:textColor="@color/colorGrey"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.1dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/dimen_10dp"
+            android:background="@color/primary_green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Total Order"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amntTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0"
+                android:textColor="@color/orange"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/orderTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/detailBg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/drawer_background"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="Click here to Confirm Booking"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/selectCountBg"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/search_bg"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/menuHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include layout="@layout/menu_list_header" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/menuList"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/menuHeader" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

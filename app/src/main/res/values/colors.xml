@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB6326</color>
+    <color name="colorPrimaryDark">#D25114</color>
+    <color name="colorPrimaryvDark">#a33e0f</color>
+    <color name="colorAccent">#000000</color>
+    <color name="lighBlk">#5a202120</color>
+    <color name="view">#95abb3ab</color>
+    <color name="light_orange">#FFECEC</color>
+    <color name="yell">#F50087FE</color>
+    <color name="ltbrwn">#73a10404</color>
+    <color name="blk">#000000</color>
+    <color name="red">#bbe70404</color>
+    <color name="red_color">#cce70404</color>
+    <color name="blue">#CC349EFB</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#98D89B</color>
+    <color name="colorGreenDark">#76C46E</color>
+    <color name="colorRed">#fb4646</color>
+    <color name="colorYellow">#F00087FE</color>
+    <color name="colorHintYellow">#0087FE</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="greyLight">#f2f2f2</color>
+    <color name="colorGrey">#666666</color>
+    <color name="colorHint">#808080</color>
+    <color name="colorDivider">#AAAAAA</color>
+    <color name="colorBG">#FFFFFF</color>
+    <color name="colorGreyBG">#f5f2f2</color>
+    <color name="colorTrans">#00E6E6E6</color>
+    <color name="colorBlackTrans">#88000000</color>
+
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+    <color name="light_white">#f5f5f5</color>
+</resources>

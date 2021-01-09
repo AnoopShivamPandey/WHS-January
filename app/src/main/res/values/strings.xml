@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WHS</string>
+    <string name="t_c"><u>Terms &amp; Conditions</u></string>
+
+
+    <string name="Rs">\u20B9</string>
+    <string name="rupee">\u20B9 </string>
+    <string name="walletText">Use Wallet Balance(Max \u20B9 20) </string>
+
+    <!--<string name="google_api_key_latest">"AIzaSyBXD4qTsQol5SvygVPc0-Kqf2HZRpqUx28"</string>-->
+
+    <string name="google_api_key_latest">"AIzaSyA_eM-z5L19ZeYZMn7_zxmzpYPJlgx7UoM"</string>
+    <string name="google_server_key_latest">"AIzaSyA_eM-z5L19ZeYZMn7_zxmzpYPJlgx7UoM"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_1">My Bookings</string>
+    <string name="tab_2">My Offers</string>
+    <string name="tab_3">Search</string>
+    <string name="tab_4">Categories</string>
+    <string name="tab_5">Account</string>
+    <string name="disclaimer">World Health Solution is a semi closed payment option and can be used anywhere where World Health Solution is acceptable.</string>
+    <string name="my">World Health</string>
+    <string name="treat">  Solution</string>
+</resources>

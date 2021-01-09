@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/offerBg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/dialog_bg"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/msgTxt"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/titleTxt"
+            android:src="@drawable/offer" />
+
+        <TextView
+            android:id="@+id/confirmTxt"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dialog_n0_btn_bg"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="Order now"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/cancelTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/confirmTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dialog_n0_btn_bg"
+            android:gravity="center"
+            android:text="Cancel"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_alignRight="@id/offerBg"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:padding="2dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/close"
+        android:layout_height="40dp" />
+
+
+</RelativeLayout>

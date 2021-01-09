@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/cb_grey"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/dialog_bg"
+        android:padding="20dp">
+
+
+
+        <EditText
+            android:id="@+id/msgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTxt"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Insert Coupon Code"
+            android:textColor="@color/colorGrey"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/confirmTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/msgTxt"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dialog_yes_btn_bg"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/cancelTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/confirmTxt"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dialog_n0_btn_bg"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

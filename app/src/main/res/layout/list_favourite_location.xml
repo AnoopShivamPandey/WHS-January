@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llrowList"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_pin" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/searched_Place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="Search"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                 />
+
+            <TextView
+                android:id="@+id/favouriteListId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Search"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/searchedLat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Search"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/searchedLng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Search"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider" />
+
+</LinearLayout>

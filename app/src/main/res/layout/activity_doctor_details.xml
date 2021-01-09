@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.DoctorDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/header"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/white"
+            android:src="@drawable/ic_left_arrow" />
+        <TextView
+            android:id="@+id/headerTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center|left"
+            android:text="Doctor Profile"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/mobileBg"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@drawable/doctordetailbox"
+                android:orientation="vertical">
+            </LinearLayout>
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/userPic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/doctor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/login"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/userPic"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50000 RS."
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/fee"
+                    android:padding="@dimen/dimen_5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_marginTop="90dp"
+               android:layout_marginRight="40dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerHorizontal="true"
+               android:background="@drawable/timimg"
+               android:layout_toRightOf="@+id/userPic"
+               android:layout_height="30dp">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="10:00 AM to 6:00 PM"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:id="@+id/time_tv"
+                   android:padding="@dimen/dimen_5dp"
+                   android:layout_gravity="center"
+                   android:textColor="@color/white"
+                   android:textSize="8sp" />
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/userPic"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Anoop Pandey"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/user_name_tv"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_rating="3.6"
+                    app:srb_starBackgroundColor="@color/gray"
+                    app:srb_fillColor="@color/colorPrimaryDark"
+                    app:srb_borderColor="@color/blue"
+                    app:srb_pressedFillColor="@color/colorPrimaryDark"
+                    app:srb_starSize="25dp"
+                    app:srb_drawBorderEnabled="false"
+                    />   <!--20dp padding from all the sides of rating bar-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allergist/Immunoligst"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/department_tv"
+                    android:layout_marginTop="@dimen/dimen_2dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caterory: Allopath"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/category_tv"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specialist: Dermatogogist"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:id="@+id/speclist_tv"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Location: B-block, Indira Nagar, Lucknow"
+                    android:layout_marginTop="2dp"
+                    android:textStyle="bold"
+                    android:id="@+id/location_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/appotment_btn"
+                        android:src="@drawable/appoitment"
+                        android:layout_weight="1"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/vediocall"
+                        android:src="@drawable/vedio"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:id="@+id/call_btn"
+                        android:src="@drawable/call"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

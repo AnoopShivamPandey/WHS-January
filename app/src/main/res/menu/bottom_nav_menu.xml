@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/category"
+        android:title="Category"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/order_black_24dp"
+        android:title="Order"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:enabled="true"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/ic_local_offer_black_24dp"
+        android:title="Offers"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/user"
+        android:title="Account"
+        android:color="#FFFFFF"
+        android:tint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        />
+
+</menu>

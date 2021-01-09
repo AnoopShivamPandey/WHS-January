@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WHS.iml" filepath="$PROJECT_DIR$/.idea/modules/WHS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WHS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WHS.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appnotifications/WHS.appnotifications.iml" filepath="$PROJECT_DIR$/.idea/modules/appnotifications/WHS.appnotifications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calendarlibrary/WHS.calendarlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/calendarlibrary/WHS.calendarlibrary.iml" />
+    </modules>
+  </component>
+</project>

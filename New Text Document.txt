@@ -1,0 +1,13 @@
+9F:BA:D2:C2:47:BF:D9:01:35:E4:12:9B:B2:F4:9A:7E:AF:04:C2:79
+
+
+keystore
+
+alias/password
+billa/billa123
+
+https://accounts.google.com/signin/v2/identifier?service=androiddeveloper&passive=1209600&continue=https%3A%2F%2Fplay.google.com%2Fapps%2Fpublish%2F%23&followup=https%3A%2F%2Fplay.google.com%2Fapps%2Fpublish%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin
+
+
+Logon: crazybillaservices@gmail.com
+Password: sdhservices

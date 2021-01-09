@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorGreen" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <TextView
+            android:id="@+id/tvPickUpLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/autoCompletetextViewPickUp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/rlbackPickUp"
+            android:layout_toRightOf="@+id/rlbackPickUp"
+            android:text="pickup"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompletetextViewPickUp"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:dropDownWidth="fill_parent"
+            android:focusable="true"
+            android:hint="enter location"
+            android:inputType="textCapWords"
+            android:paddingBottom="10dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlbackPickUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_pickUp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/autoCompletetextViewPickUp"
+        android:background="@color/colorDivider" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewPickUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llpin_to_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_pin" />
+
+        <TextView
+            android:id="@+id/tvPinToPickUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:editable="false"
+            android:singleLine="true"
+            android:text="pickup"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

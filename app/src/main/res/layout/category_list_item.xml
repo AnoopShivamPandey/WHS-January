@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@color/colorTrans"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@drawable/list_item_bg">
+        <ImageView
+            android:id="@+id/subCatPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/subCatPic"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="Order Id:"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_openmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_expand_more" />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

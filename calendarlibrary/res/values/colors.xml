@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#222222</color>
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+
+
+    <color name="current_date_Color">#03A7E9</color>
+    <color name="cancel_date_Color">#e90f03</color>
+    <color name="approved_date_Color">#198c23</color>
+    <color name="pending_date_Color">#e6de07</color>
+    <color name="complete_date_Color">#b0b0b1</color>
+    <color name="booking_date_Color">#0000ba</color>
+
+</resources>
